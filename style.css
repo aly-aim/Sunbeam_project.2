@@ -25,3 +25,28 @@ main {
 #secondCatDiv {
     display: none;
 }
+
+
+hover-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-image {
+    display: block;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.hovercontainer:hover .hover-text {
+    opacity: 1;
+}
